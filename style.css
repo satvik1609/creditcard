@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    color: #fff;
+}
+.parent {
+    background-image: linear-gradient(135deg, #30cfd0 0%, #330867 100%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.child1 {
+    padding: 10px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+    width: 450px;
+    height: 300px;
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    position: relative;
+}
+.child2{
+    padding: 10px;
+    border-radius: 10px;
+    width: 450px;
+    height: 300px;
+    z-index: -3;
+    position: relative;
+    right: 10%;
+    top: 10%;
+    background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+}
+.strip{
+    background-color: black;
+    width: 98%;
+    height: 60px;
+    position: absolute;
+    top: 30px;
+}
+.strip1{
+    width: 75%;
+    height: 50px;
+    position: absolute;
+    top: 40%;
+}
+.cvv p{
+
+    position: absolute;
+    top: 40%;
+    left: 80%;
+    padding: 15px 20px;
+    margin-left: 10px;
+    background-color: #d6cfcf;
+}
+.cvv h3{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+    position: absolute;
+    top: 75%;
+    color: #2c2c2c;
+    padding: 15px 20px;
+    margin-left: 10px;
+ 
+}
+.cvv h5 {
+    z-index: 4;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    position: absolute;
+    top: 40%;
+    left: 55%;
+    color: #2c2c2c;
+    padding: 15px 20px;
+    margin-left: 10px;
+
+}
+
+.map {
+    width: 100%;
+    margin-top: 7%;
+    z-index: -2;
+    mix-blend-mode: multiply;
+}
+.credit {
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-bottom: 30px;
+}
+.visa{
+    z-index: 2;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    margin-bottom: 30px;
+
+}
+.content{
+    font-family:Arial, Helvetica, sans-serif;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 10.5%;
+    display: flex;
+    gap: 5%;
+    width: 100%;
+    font-size: 2em;
+    
+}
+.card-detail{
+    display: flex;
+    gap: 150%;
+    z-index: 2;
+    position: absolute;
+    top:75%;
+    left: 20px;
+    
+}
+h1{
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1em;
+    color: black;
+}
+
+/* Define a rotating animation */
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+/* Apply the animation to child1 and child2 elements */
+.child1,
+.child2 {
+    animation: rotate 10s linear infinite;
+    /* Adjust the duration as needed */
+}
+
